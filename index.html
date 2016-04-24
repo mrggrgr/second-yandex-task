@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Интерфейс библиотеки shri.js</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <h1 class="heading">Интерфейс библиотеки shri.js <span class="heading-tag">(vers. 0.1)</span></h1>
+            <div class="panel">
+                <div class="nav">
+                    <div class="category">
+                        <label class="checkbox-button" onchange="">
+                            <input class="button" type="checkbox" value="Студенты" role="button">
+                            <span class="text">Студенты</span>
+                        </label>
+                    </div>
+                    <div class="category">
+                        <label class="checkbox-button unactive" onchange="">
+                            <input class="button" type="checkbox" value="Команды" role="button">
+                            <span class="text">Команды</span>
+                        </label>
+                    </div>
+                    <div class="category">
+                        <label class="checkbox-button unactive" onchange="">
+                            <input class="button" type="checkbox" value="Менторы" role="button">
+                            <span class="text">Менторы</span>
+                        </label>
+                    </div>
+                    <div class="category">
+                        <label class="checkbox-button unactive" onchange="">
+                            <input class="button" type="checkbox" value="Задания" role="button">
+                            <span class="text">Задания</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main shri-interface">
+                <div id="studentsTable" class="studentsTable">
+
+                </div>
+        </div>
+
+    </div>
+
+    <script src="js/shri.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        updateTeamSelect();
+        updateTaskSelects();
+    </script>
+
+</body>
+
+</html>
